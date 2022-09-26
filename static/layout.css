@@ -6,8 +6,14 @@
 
 
 body {
-    width: 1440px;          /* FIXME main 페이지와 적대적AI 페이지의 가로폭이 다름 */
+    width: 1440px;
     margin: 0 auto;
+
+    position: relative;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
 }
 
 
@@ -26,10 +32,11 @@ body {
 
 /* 상단 메뉴바 */
 .menu {
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
     width: 1440px;
     height: 79px;
-    left: 0px;
+    /* left: 0px; */
     top: 24px;
     
     color: black;
