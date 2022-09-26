@@ -1,0 +1,67 @@
+* {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+body {
+    width: 1440px;          /* FIXME main 페이지와 적대적AI 페이지의 가로폭이 다름 */
+    margin: 0 auto;
+}
+
+
+/* 상단 프로젝트 번호 */
+.project_num {
+    position: absolute;
+    width: 1440px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+
+    color: white;
+    background-color: #4A4A4A;
+}
+
+
+/* 상단 메뉴바 */
+.menu {
+    position: absolute;
+    width: 1440px;
+    height: 79px;
+    left: 0px;
+    top: 24px;
+    
+    color: black;
+    background-color: rgba(0, 0, 0, 0.300);
+}
+
+.menu ul {
+    float: right;
+    padding-right: 22px;
+}
+
+.menu li {
+    height: 39px;
+    padding: 0 22px;
+    list-style: none;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    display: block;
+
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 32px;
+    color: black;
+}
+.menu a:hover {
+    color: #55808E;
+}
+.menu a:active {
+    color: #D51818;
+}

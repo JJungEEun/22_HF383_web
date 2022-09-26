@@ -1,0 +1,4 @@
+/* 해시태그 */
+.tag li:nth-child(3)>a {
+    background: #B9CFBA;
+}
