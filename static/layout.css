@@ -20,11 +20,13 @@ body {
 /* 상단 프로젝트 번호 */
 .project_num {
     position: absolute;
-    width: 1440px;
+    width: 1430px;              /* width: 1440px; */
     height: 24px;
     left: 0px;
     top: 0px;
+    padding-left: 10px;
 
+    line-height: 24px;
     color: white;
     background-color: #4A4A4A;
 }
