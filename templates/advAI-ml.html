@@ -8,7 +8,11 @@
     <!-- my style -->
     <link rel="stylesheet" href="../static/layout.css">
     <link rel="stylesheet" href="../static/advAI.css">
-    <link rel="stylesheet" href="../static/advAI-ml.css">
+    <style>
+        .tag li:nth-child(1)>a {
+            background: #B9CFBA;
+        }
+    </style>
 </head>
 <body>
     <!-- 상단 프로젝트 번호 -->
@@ -38,72 +42,134 @@
         <!-- 태그 내용: 머신러닝 개념 -->
         <article class="tag-ml">
             <div class="ml-concept">
-                머신러닝 개념 머신러닝 개념 머신러닝 개념 머신러닝 개념
+                머신러닝(ML; Machine Learning, 기계학습)은 <!-- 인간의 뇌를 모방하는 프로그램인 --> 인공지능의 하위 분야로,
                 <br>
-                머신러닝 개념 머신러닝 개념 머신러닝 개념 머신러닝 개념
-                <br>
-                머신러닝 개념 머신러닝 개념 머신러닝 개념 머신러닝 개념
+                데이터를 기반으로 학습해 무언가를 예측하거나, 데이터 자체의 어떤 특성을 찾는 프로그램이다.
             </div>
         </article>
 
-        <!-- 본문: 적대적 공격 및 방어 -->
-        <article class="adv_attack_defense">
-            <!-- 적대적 공격 종류 -->
-            <section class="adv_attack-type">
-                <div class="title">적대적 공격 종류</div>
+        <hr class="division">
+
+        <!-- 적대적 공격 및 방어 -->
+        <article class="attack_defense">
+            <!-- 적대적 공격 기법 -->
+            <section class="attack-type">
+                <div class="title">적대적 공격 기법</div>
                 <article class="FGSM">
-                    <div class="subtitle">FGSM</div>
-                    <div class="content">내용을 입력하세요</div>
+                    <div class="attack-subtitle">FGSM</div>
+                    <div class="attack-content">
+                        <p>
+                            FGSM(Fast Gradient Sign Method)은 <br> 적대적 예제의 시초로서, <br> 딥러닝 모델의 근본적인 취약점을 다룬 공격 기법이다.
+                        </p>
+                        <p>
+                            <!-- 딥러닝 모델은 로스(Loss)를 계산하며 그래디언트 정보를 역전파(Backpropagation) 방식으로 학습한다. 이때, --> 학습하는 방향의 반대방향으로 생성한 노이즈를 더하면 <br> 모델을 오작동시킬 수 있다는 것이 <br> FGSM의 기본 아이디어다.
+                        </p>
+                    </div>
                 </article>
                 <article class="PGD">
-                    <div class="subtitle">PGD</div>
-                    <div class="content">내용을 입력하세요</div>
+                    <div class="attack-subtitle">PGD</div>
+                    <div class="attack-content">
+                        PGD(Projected Gradient Descent)는 <br> FGSM을 응용한 공격 방법으로, <br> 노이즈(Perturbation)를 적당한 스텝 단위로 나눠 <br> n번 반복 적용하는 공격 기법이다.
+                    </div>
                 </article>
             </section>
-            <!-- 적대적 방어가 필요한 이유 -->
-            <section class="adv_defense-need">
-                <div class="title">적대적 방어가 필요한 이유</div>
+
+            <!-- 적대적 공격에 대한 방어가 필요한 이유 -->
+            <section class="defense-need">
+                <div class="title">적대적 공격에 대한 방어가 필요한 이유</div>
+                <!-- 이유 1 -->
                 <article class="need1">
                     <div class="need-icon"></div>
-                    <div class="need-content">적대적 방어가 필요한 이유 1</div>
+                    <div class="need-content">
+                        누군가가 이득을 위해 고의적으로 <br> 머신러닝 시스템에 적대적 공격을 할 수 있다.
+                    </div>
                 </article>
+                <!-- 이유 2 -->
                 <article class="need2">
                     <div class="need-icon"></div>
-                    <div class="need-content">적대적 방어가 필요한 이유 2</div>
+                    <div class="need-content">
+                        적대적 공격에 노출될 경우, <br> 실생활에 영향을 미치는 피해를 입을 수 있으며, <br> 심지어는 생명과 직결되는 위협을 받을 수 있다.
+                    </div>
                 </article>
-                <article class="need3">
+                <!-- 이유 3 -->
+                <!-- <article class="need3">
                     <div class="need-icon"></div>
-                    <div class="need-content">적대적 방어가 필요한 이유 3</div>
-                </article>
+                    <div class="need-content">
+                        적대적 공격의 
+                    </div>
+                </article> -->
             </section>
-            <!-- 적대적 방어 개념 -->
-            <section class="tag-adv_defense">
-                <div class="title">적대적 방어</div>
-                <div class="adv_defese-concept">
-                    적대적방어 개념 적대적방어 개념 적대적방어 개념 적대적방어 개념
-                    <br>
-                    적대적방어 개념 적대적방어 개념 적대적방어 개념 적대적방어 개념
-                    <br>
-                    적대적방어 개념 적대적방어 개념 적대적방어 개념 적대적방어 개념
+
+            <!-- 적대적 공격 방어 개념 -->
+            <section class="tag-defense">
+                <div class="title">적대적 공격 방어 기법</div>
+                <div class="defese-concept">
+                    <!-- <p>
+                    적대적 예제의 존재가 발견되고 다양한 도메인에 적용가능한 취약점을 갖고 있기에 그에 상응하는 방어 방법들도 제안되고 있다.
+                    </p>
+                    <p>
+                        적대적 공격에 대한 방어 방법은 크게 Adversarial Training(적대적 훈련)과 Pre-processing(전처리) 방식으로 나뉜다.
+                        <br>
+                        아래의 MagNet, Defense-GAN, DefPCA 모델은 전처리 방식으로 진행된다.
+                    </p> -->
+                    <p>
+                        적대적 공격에 대한 방어 모델은 크게 블랙박스, 화이트박스 두 종류로 나뉜다.
+                        <br>
+                        화이트박스는 모델의 견고함을 높이기 위해, 블랙박스는 어떤 공격이 가해질지 알 수 없는 실제 자율주행 상황에서 주로 사용된다.
+                    </p>
+                    <p>
+                        화이트박스 방어는 적대적 공격에 대한 정보를 미리 알고 있는 경우이며, 공격 데이터를 모델 학습에 사용하는 적대적 학습이 대표적이다.
+                        <br>
+                        Adversarial Training이 이에 해당한다.
+                    </p>
+                    <p>
+                        블랙박스는 적대적 공격의 종류와 무관하게 방어를 수행하며, MagNet, Defense-GAN, DefPCA가 이에 해당한다.
+                    </p>
                 </div>
             </section>
-            <!-- 적대적 방어 종류 -->
-            <section class="adv_defense-type">
+
+            <!-- 적대적 공격 방어 종류 -->
+            <section class="defense-type">
                 <article class="adv_train">
-                    <div class="adv_defense-type-heading">Adversarial Training</div>
-                    <div class="adv_defense-type-content">~~~</div>
+                    <div class="defense-type-heading">Adversarial Training</div>
+                    <div class="defense-type-content">
+                        <p>
+                            Adversarial Training(적대적 훈련)이란 딥러닝 모델의 훈련 과정에서 <br> 적대적 샘플을 생성 후 학습시켜 적대적 공격에 대한 Entropy를 최소화 시킬 수 있는 <br> 일종의 Data Augmentation(데이터 조정) 방법이다.
+                        </p>
+                    </div>
                 </article>
                 <article class="magnet">
-                    <div class="adv_defense-type-heading">MagNet</div>
-                    <div class="adv_defense-type-content">~~~</div>
+                    <div class="defense-type-heading">MagNet</div>
+                    <div class="defense-type-content">
+                        <p>
+                            MagNet은 오토인코더로 구성한 Detector와 Reformer로 구성된 방어 모델이다.
+                        </p>
+                        <p>
+                            Detector는 재구성 오류를 통해 적대적 이미지를 탐지하고, <br> Reformer는 적대적 이미지를 재구성한다.
+                        </p>
+                    </div>
                 </article>
                 <article class="defense_gan">
-                    <div class="adv_defense-type-heading">Defense-GAN</div>
-                    <div class="adv_defense-type-content">~~~</div>
+                    <div class="defense-type-heading">Defense-GAN</div>
+                    <div class="defense-type-content">
+                        <p>
+                            Defense-GAN은 생성기와 분류기의 적대적 훈련 과정을 통해 <br> 무작위 잡음을 원본 이미지 분포에 수렴시키는 GAN을 이용한 방어 모델이다.
+                        </p>
+                        <p>
+                            원본 이미지 분포에 대해 학습된 생성기의 입력값으로 <br> 적대적 공격 이미지에 최적화된 노이즈(Perturbation)를 넣어, <br> 공격에 가해진 변동을 완화함으로써 방어를 수행한다.
+                        </p>
+                    </div>
                 </article>
                 <article class="defpca">
-                    <div class="adv_defense-type-heading">DefPCA</div>
-                    <div class="adv_defense-type-content">~~~</div>
+                    <div class="defense-type-heading">DefPCA</div>
+                    <div class="defense-type-content">
+                        <p>
+                            DefPCA는 적대적 공격 이미지를 주성분으로 재구성해 <br> 적대적 공격을 완화 및 방어하는 모델이다.
+                        </p>
+                        <p>
+                            PCA(Principal Component Analysis)를 통해 추출된 데이터의 주성분만으로 <br> 설명력이 유지된다는 개념에서 착안하여 둘삼삼둘에서 개발한 모델이다.
+                        </p>
+                    </div>
                 </article>
             </section>
         </article>

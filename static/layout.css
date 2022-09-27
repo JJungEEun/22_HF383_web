@@ -17,6 +17,11 @@ body {
 }
 
 
+p {
+    margin: 0 0 12px 0;
+}
+
+
 /* 상단 프로젝트 번호 */
 .project_num {
     position: absolute;

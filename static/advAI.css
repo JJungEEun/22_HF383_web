@@ -4,7 +4,7 @@
     flex: left;
     position: absolute;
     /* width: 808.64px; */
-    width: 1423px;
+    width: 1440px;
     height: 62px;
     /* left: 331px; */
     left: 0px;
@@ -64,8 +64,8 @@
 .ml-concept, .adv_attack-concept, .adv_ex-concept {
     flex-direction: column;
     position: absolute;
-    width: 1423px;              /* width: 1190px; */
-    height: 157px;
+    width: 1440px;              /* width: 1190px; */
+    height: 150px;
     left: 0px;                  /* left: 116px; */
     top: 281px;
 
@@ -78,7 +78,23 @@
     color: #000000;
 }
 
+
+.division {
+    position: absolute;
+    width: 500px;
+    height: 0px;
+    left: 470px;
+    top: 460px;
+
+    border: 1px solid rgb(150, 150, 150);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+
+/* 적대적 공격 및 방어 */
 .title {
+    flex-direction: column;
+
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -91,7 +107,7 @@
     color: #000000;
 }
 
-.subtitle {
+.attack-subtitle {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -104,29 +120,46 @@
     color: #000000;
 }
 
-
-/* 본문: 적대적 공격 및 방어 */
-
 /* 적대적 공격 종류 */
-.adv_attack-type {
+.attack-type {
     position: absolute;
     width: 1216px;
     height: 413px;
     left: 103px;
-    top: 520px;                 /* top: 549px; */
+    top: 580px;                 /* top: 549px; */
 }
 
-.adv_attack-type .title {
+.attack-type .title {
     position: absolute;
-    width: 319px;
+    width: 1216px;              /* width: 319px; */
     height: 38px;
-    left: 499px;                /* left: 600px; */
+    /* left: 499px; */                /* left: 600px; */
     /* top: 549px; */
 }
 
-.adv_attack-type .content {
-    font-size: 28px;
-    line-height: 34px;
+.attack-subtitle {
+    flex-direction: column;
+    position: absolute;
+    width: 520px;               /* width: 80px; */
+    height: 32px;
+    /* left: 227px; */
+    top: 40px;                  /* top: 52px; */
+
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.attack-content {
+    flex-direction: column;
+    width: 520px;
+    height: 200px;
+    top: 97px;
+
+    font-size: 24px;
+    line-height: 30px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -136,122 +169,93 @@
 
 .FGSM, .PGD {
     position: absolute;
-    width: 550px;
+    width: 520px;
     height: 329px;
     /* top: 47px; */
     bottom: 0px;
+    padding: 0 10px;
 
     background: #D9D9D9;
     border-radius: 15px;
 }
 
-.FGSM .subtitle {
+.FGSM .attack-content {
+    flex-direction: column;
     position: absolute;
-    /* width: 262.09px; */
-    height: 59.82px;
-    left: 217px;
-    top: 42px;
-}
-.FGSM .content {
-    position: absolute;
-    height: 42.37px;
-    left: 150.5px;
-    top: 174px;
+    /* left: 150.5px; */
+    /* top: 174px; */
 }
 
 .PGD {
     right: 0px;
 }
-.PGD .subtitle {
-    position: absolute;
-    /* width: 80px; */
-    height: 40px;
-    left: 227px;
-    top: 52px;
-}
-.PGD .content {
+.PGD .attack-content {
+    flex-direction: column;
     position: absolute;
     /* width: 260px; */
-    height: 42.37px;
-    left: 145px;
-    top: 174px;
+    /* left: 145px; */
 }
 
 
 
 /* 적대적 방어가 필요한 이유 */
-.adv_defense-need {
+.defense-need {
     position: absolute;
     width: 1229px;
     height: 390px;
     left: 97px;
-    top: 1080px;                /* top: 1102px; */
+    top: 1110px;                /* top: 1102px; */
     
     text-align: center;
 }
 
-.adv_defense-need .title {
+.defense-need .title {
+    flex-direction: row;
     position: absolute;
     height: 66px;
-    left: 373px;                /* left: 470px; */
+    left: 370px;                /* left: 470px; */
     top: 0px;                   /* top: 1102px; */
-    padding: 0 67px;
 
-    background: #B9CFBA;
-
-    text-align: center;
-}
-
-.need1, .need2, .need3 {
-    position: absolute;
-    width: 321px;
-    height: 255px;
-    top: 133px;
-
+    display: flex;
     text-align: center;
     align-items: center;
+}
 
-    border: 1px solid black;
+.need1, .need2 {
+    position: absolute;
+    width: 400px;
+    height: 255px;
+    top: 133px;
 }
 
 .need1 {
-    left: 0px;
-    text-align: center;
-}
-.need1 .need-content {
-    left: 0px;
-    text-align: center;
+    left: 190px;
 }
 
 .need2 {
-    left: 454px;                /* left: 551px; */
-}
-.need2 .need-content {
-    left: 0px;                  /* left: 551px; */
-}
-
-.need3 {
-    left: 908px;                /* left: 1235px; */
-}
-.need3 .need-content {
-    left: 0px;                  /* left: 1005px; */
+    right: 190px;
 }
 
 .need-icon {
     position: absolute;
     width: 100px;
-    height: 103px;
-    left: 110px;
+    height: 100px;
+    left: 150px;
     top: 0px;
-
+}
+.need1 .need-icon {
+    background: url(hack.png);
+    background-size: 100px;
+}
+.need2 .need-icon {
     background: url(internet-error.png);
-    /* border: 1px solid black; */
+    background-size: 100px;
 }
 
 .need-content {
     flex-direction: column;
     position: absolute;
-    width: 321px;
+    width: 400px;
     height: 125px;
     top: 130px;                 /* top: 1351px; */
 
@@ -266,7 +270,7 @@
 
 
 /* 적대적 방어 개념 */
-.tag-adv_defense {
+.tag-defense {
     position: absolute;
     width: 1197px;
     height: 193px;
@@ -274,23 +278,26 @@
     top: 1597px;
 }
 
-.tag-adv_defense .title {
+.tag-defense .title {
     position: absolute;
+    width: 1197px;
     height: 38px;
-    left: 514px;
+    /* left: 514px; */
     top: 0px;
 }
 
-.adv_defese-concept {
+.defese-concept {
     flex-direction: column;
     position: absolute;
     width: 1197px;
-    height: 155px;
+    /* height: 155px; */
     left: 0px;
     top: 73px;
 
-    font-size: 20px;
-    line-height: 24px;
+    /* font-size: 20px;
+    line-height: 24px; */
+    font-size: 24px;
+    line-height: 30px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -298,18 +305,19 @@
 
 
 /* 적대적 방어 종류 */
-.adv_defense-type {
+.defense-type {
     position: absolute;
-    width: 1423px;
+    width: 1440px;
     height: 695px;
     left: 0px;
-    top: 1819px;    
+    top: 1920px;
 }
 
 .adv_train, .magnet, .defense_gan, .defpca {
     position: absolute;
-    width: 717px;
+    width: 660px;
     height: 347.5px;
+    padding: 0 30px;
 }
 
 .adv_train {
@@ -340,13 +348,13 @@
     background: #D9D9D9;
 }
 
-.adv_defense-type-heading {
+.defense-type-heading {
     flex-direction: column;
     position: absolute;
-    width: 717px;
+    width: 660px;
     height: 39.18px;
-    left: 0px;
-    top: 63px;
+    /* left: 0px; */
+    top: 70px;
 
     font-weight: 700;
     font-size: 24px;
@@ -356,12 +364,12 @@
     text-align: center;
 }
 
-.adv_defense-type-content {
+.defense-type-content {
     position: absolute;
-    width: 717px;
+    width: 660px;
     height: 179px;
-    left: 0px;
-    top: 147px;
+    /* left: 0px; */
+    top: 150px;
 
     font-size: 20px;
     line-height: 24px;
