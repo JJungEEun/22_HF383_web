@@ -1,0 +1,377 @@
+/* 해시태그 */
+.tag {
+    flex-direction: column;
+    flex: left;
+    position: absolute;
+    /* width: 808.64px; */
+    width: 1440px;
+    height: 62px;
+    /* left: 331px; */
+    left: 0px;
+    top: 161px;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.tag ul {
+    
+    padding: 0px;
+}
+
+.tag li {
+    width: 234.64px;
+    height: 62px;
+    
+    list-style: none;
+    float: left;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.tag li:nth-child(2) {
+    margin: 0 52.36px;
+}
+
+.tag a {
+    width: 234.64px;
+    height: 62px;
+    text-decoration: none;
+    display: block;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 62px;
+    text-align: center;
+    
+    color: black;
+    background: rgba(185, 207, 186, 0.5);
+    border-radius: 20px;
+}
+.tag a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+.tag a:active {
+    border: 5px solid #d1dfd1;
+}
+
+
+/* 태그 내용: 개념 (머신러닝, 적대적 공격, 적대적 예제) */
+.ml-concept, .adv_attack-concept, .adv_ex-concept {
+    flex-direction: column;
+    position: absolute;
+    width: 1440px;              /* width: 1190px; */
+    height: 150px;
+    left: 0px;                  /* left: 116px; */
+    top: 281px;
+
+    font-size: 30px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+
+.division {
+    position: absolute;
+    width: 500px;
+    height: 0px;
+    left: 470px;
+    top: 460px;
+
+    border: 1px solid rgb(150, 150, 150);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+
+/* 적대적 공격 및 방어 */
+.title {
+    flex-direction: column;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.attack-subtitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+/* 적대적 공격 종류 */
+.attack-type {
+    position: absolute;
+    width: 1216px;
+    height: 413px;
+    left: 103px;
+    top: 580px;                 /* top: 549px; */
+}
+
+.attack-type .title {
+    position: absolute;
+    width: 1216px;              /* width: 319px; */
+    height: 38px;
+    /* left: 499px; */                /* left: 600px; */
+    /* top: 549px; */
+}
+
+.attack-subtitle {
+    flex-direction: column;
+    position: absolute;
+    width: 520px;               /* width: 80px; */
+    height: 32px;
+    /* left: 227px; */
+    top: 40px;                  /* top: 52px; */
+
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.attack-content {
+    flex-direction: column;
+    width: 520px;
+    height: 200px;
+    top: 97px;
+
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.FGSM, .PGD {
+    position: absolute;
+    width: 520px;
+    height: 329px;
+    /* top: 47px; */
+    bottom: 0px;
+    padding: 0 10px;
+
+    background: #D9D9D9;
+    border-radius: 15px;
+}
+
+.FGSM .attack-content {
+    flex-direction: column;
+    position: absolute;
+    /* left: 150.5px; */
+    /* top: 174px; */
+}
+
+.PGD {
+    right: 0px;
+}
+.PGD .attack-content {
+    flex-direction: column;
+    position: absolute;
+    /* width: 260px; */
+    /* left: 145px; */
+}
+
+
+
+/* 적대적 방어가 필요한 이유 */
+.defense-need {
+    position: absolute;
+    width: 1229px;
+    height: 390px;
+    left: 97px;
+    top: 1110px;                /* top: 1102px; */
+    
+    text-align: center;
+}
+
+.defense-need .title {
+    flex-direction: row;
+    position: absolute;
+    height: 66px;
+    left: 370px;                /* left: 470px; */
+    top: 0px;                   /* top: 1102px; */
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.need1, .need2 {
+    position: absolute;
+    width: 400px;
+    height: 255px;
+    top: 133px;
+}
+
+.need1 {
+    left: 190px;
+}
+
+.need2 {
+    right: 190px;
+}
+
+.need-icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 150px;
+    top: 0px;
+}
+.need1 .need-icon {
+    background: url(hack.png);
+    background-size: 100px;
+}
+.need2 .need-icon {
+    background: url(internet-error.png);
+    background-size: 100px;
+}
+
+.need-content {
+    flex-direction: column;
+    position: absolute;
+    width: 400px;
+    height: 125px;
+    top: 130px;                 /* top: 1351px; */
+
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+
+/* 적대적 방어 개념 */
+.tag-defense {
+    position: absolute;
+    width: 1197px;
+    height: 193px;
+    left: 119px;
+    top: 1597px;
+}
+
+.tag-defense .title {
+    position: absolute;
+    width: 1197px;
+    height: 38px;
+    /* left: 514px; */
+    top: 0px;
+}
+
+.defese-concept {
+    flex-direction: column;
+    position: absolute;
+    width: 1197px;
+    /* height: 155px; */
+    left: 0px;
+    top: 73px;
+
+    /* font-size: 20px;
+    line-height: 24px; */
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* 적대적 방어 종류 */
+.defense-type {
+    position: absolute;
+    width: 1440px;
+    height: 695px;
+    left: 0px;
+    top: 1920px;
+}
+
+.adv_train, .magnet, .defense_gan, .defpca {
+    position: absolute;
+    width: 660px;
+    height: 347.5px;
+    padding: 0 30px;
+}
+
+.adv_train {
+    left: 0px;
+    top: 0px;
+    
+    background: #D9D9D9;
+}
+
+.magnet {
+    right: 0px;
+    top: 0px;
+    
+    background: #F5F5F5;
+}
+
+.defense_gan {
+    left: 0px;
+    bottom: 0px;
+    
+    background: #F5F5F5;
+}
+
+.defpca {
+    right: 0px;
+    bottom: 0px;
+    
+    background: #D9D9D9;
+}
+
+.defense-type-heading {
+    flex-direction: column;
+    position: absolute;
+    width: 660px;
+    height: 39.18px;
+    /* left: 0px; */
+    top: 70px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.defense-type-content {
+    position: absolute;
+    width: 660px;
+    height: 179px;
+    /* left: 0px; */
+    top: 150px;
+
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}

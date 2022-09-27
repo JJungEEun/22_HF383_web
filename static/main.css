@@ -1,0 +1,396 @@
+body {
+    width: 1440px;
+    height:100%;
+    margin: 0 auto;
+    
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+
+/* 라즈베리파이 이미지 출력 */
+.rasp_img {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 474.46px;
+    height: 484.52px;
+    left: 69px;
+    top: 143.48px;
+
+    background: #B3B3B3;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+.img_text {
+    position: absolute;
+    width: 243.89px;
+    height: 51.28px;
+    left: 114.77px;     /* left: 183.77px; */
+    top: 10.98px;       /* top: 154.46px; */
+
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.img {
+    position: absolute;
+    width: 406.82px;
+    height: 398.71px;
+    left: 33.82px;      /* left: 102.82px; */
+    top: 69.59px;       /* top: 213.07px; */
+
+    background: url(raspberrypi_image-ex.png);
+    /* background-color: white; */
+}
+
+
+/* 주제, 팀 소개 */
+.info {
+    position: absolute;
+    width: 757.33px;
+    height: 164.02px;
+    left: 613.67px;
+    top: 143px;
+
+    text-align: center;
+}
+
+.paper_name, .team {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+}
+.paper_name {
+    margin: 0 0 30px 0;
+    font-size: 34px;
+}
+.team, .members {
+    font-size: 26px;
+}
+
+hr {
+    position: absolute;
+    width: 757.33px;
+    height: 0px;
+    left: 613.67px;
+    top: 295px;         /* top: 307.02px; */
+    
+    border: 1px solid #4A4A4A;
+}
+
+
+/* 실제 Target */
+.real_target {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 361.24px;
+    height: 293px;
+    left: 613.67px;
+    top: 335px;
+
+    mix-blend-mode: darken;
+    border: 1px solid #000000;
+    border-radius: 4px;  
+}
+
+.target_title {
+    flex-direction: column;
+    position: absolute;
+    width: 179.42px;
+    height: 38.72px;
+    left: 91.28px;      /* left: 704.95px; */
+    top: 82.81px;       /* top: 417.81px */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #D51818;
+}
+
+.target_content {
+    position: absolute;
+    width: 284.69px;
+    height: 50.78px;
+    left: 38.12px;      /* left: 651.79px; */
+    top: 153.66px;      /* top: 488.66px; */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #55808E;
+}
+
+
+/* 접속 여부 */
+.conn_status {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 361.24px;
+    height: 122.53px;
+    left: 1007.75px;
+    top: 335px;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+    border-radius: 4px;  
+}
+
+.conn_title {
+    position: absolute;
+    width: 203.5px;
+    height: 43.36px;
+    left: 78.27px;      /* left: 1086.02px */
+    top: 18.11px;       /* top: 353.11px */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.conn_description {
+    position: absolute;
+    width: 24.49px;
+    height: 23.56px;
+    right: 84px;
+    top: 20px;
+
+    background: url(question-mark.png);
+    /* border: 1px solid black; */
+}
+
+.conn_content {
+    position: absolute;
+    width: 202px;
+    height: 39px;
+    left: 80.25px;      /* left: 1088px; */
+    top: 61px;          /* top: 396px; */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #55808E;
+}
+
+
+/* 소요 시간 */
+.time_taken {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 361.24px;
+    height: 149.16px;
+    left: 1007.75px;
+    top: 478.84px;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+.time_title {
+    position: absolute;
+    width: 203.5px;
+    height: 27.86px;
+    left: 78.27px;      /* left: 1086.02px; */
+    top: 15.92px;       /* top: 494.76px; */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.time_content {
+    position: absolute;
+    width: 268.12px;
+    height: 47.77px;
+    left: 46.96px;      /* left: 1054.71px; */
+    top: 52.74px;       /* top: 531.58px; */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #55808E;
+}
+
+.time_taken hr {
+    position: absolute;
+    width: 299.83px;
+    height: 0px;
+    left: 31.42px;      /* left: 1039.17px; */
+    top: 100px;         /* top: 588.58px; */
+
+    border: 1px solid #4A4A4A;
+}
+
+.time_avg {
+    position: absolute;
+    width: 316.69px;
+    height: 24.88px;
+    left: 22.99px;/* left: 1030.74px; */
+    top: 115.71px;/* left: 1030.74px; */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+
+/* 원본 정확도, 공격 데이터 정확도, 공격 데이터 방어 정확도 */
+.bottom {
+    position: absolute;
+    width: 1440px;
+    height: 353px;
+    left: 0px;
+    top: 671px;
+
+    background: #F8F8F8;
+}
+
+.normal_acc {
+    position: absolute;
+    width: 376.66px;
+    height: 300px;
+    left: 87px;
+    top: 35px;          /* top: 698px; */
+
+    /* border: 1px solid black; */
+}
+
+.attacked_acc {
+    position: absolute;
+    width: 377.16px;
+    height: 300px;
+    left: 531.37px;
+    top: 35px;         /* top: 698px; */
+
+    /* border: 1px solid black; */
+}
+
+.defense_acc {
+    position: absolute;
+    width: 376.66px;
+    height: 300px;
+    left: 975.73px;
+    top: 35px;          /* top: 698px; */
+
+    /* border: 1px solid black; */
+}
+
+.bottom hr {
+    position: absolute;
+    width: 376.66px;
+    height: 0px;
+    left: 0px;          /* left: 87px; */
+    top: 45px;          /* top: 753.8px; */
+    
+    border: 1px solid #4A4A4A;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.acc_title {
+    flex-direction: column;
+    position: absolute;
+    width: 376.66px;
+    height: 55.35px;
+    /* left: 87px; */
+    top: 0px;           /* top: 698px; */
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.acc_chart {
+    position: absolute;
+    width: 157.13px;
+    height: 157.13px;
+    left: 42px;         /* left: 129px; */
+    top: 71px;          /* top: 769px; */
+
+    line-height: 157.13px;
+    text-align: center;
+
+    background: #D9D9D9;
+    border-radius: 100%;
+}
+
+.acc_fig {
+    position: absolute;
+    width: 94.29px;
+    height: 32.14px;
+    left: 239.76px;     /* left: 326.76px; */
+    top: 133.92px;      /* top: 831.92px; */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    text-align: right;
+    
+    color: #D51818;
+}
+
+.acc_content {
+    position: absolute;
+    width: 292.9px;
+    height: 29.46px;
+    left: 42.13px;      /* left: 129.13px; */
+    top: 249.98px;      /*  top: 947.98px; */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    
+    color: #55808E;
+}

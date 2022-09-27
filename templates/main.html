@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한이음 공모전 - 둘삼삼둘</title> <!-- FIXME title 수정 필요 -->
+    <!-- my style -->
+    <link rel="stylesheet" href="../static/layout.css">
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+<body>
+    <!-- 상단 프로젝트 번호 -->
+    <div class="project_num">22_HF383</div>
+
+    <header>
+        <!-- 상단 메뉴바 -->
+        <nav class="menu">
+            <ul>
+                <li><a href='./main.html'>Main</a></li>
+                <li><a href='./advAI-ml.html'>적대적AI</a></li>
+                <li><a href='./about.html'>About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="mid">
+        <!-- 라즈베리파이 이미지 출력 -->
+        <section class="rasp_img">
+            <div class="img_text">Traffic sign recognized<br>by Paspberry Pi</div>
+            <div class="img"></div>
+        </section>
+        <!-- 주제, 팀 소개 -->
+        <section class="info">
+            <div class="paper_name">자율주행을 위한 적대적 공격 및 방어 딥러닝 모델 연구</div>
+            <div class="team">한이음 ICT멘토링 - 둘삼삼둘</div>
+            <div class="members">(김채현, 이진규, 정은, 정재호, 이현정, 이규영)</div>
+        </section>
+        <hr>
+        <section>
+            <!-- 실제 Target -->
+            <article class="real_target">
+                <div class="target_title">실제 Target</div>
+                <div class="target_content">---</div>
+            </article>
+            <!-- 접속 여부 -->
+            <article class="conn_status">
+                <div class="conn_title">접속 여부</div>
+                <div class="conn_description"></div>
+                <div class="conn_content">---</div> <!-- Good(파랑), Bad(빨강) -->
+            </article>
+            <!-- 소요 시간 -->
+            <article class="time_taken">
+                <div class="time_title">소요 시간</div>
+                <div class="time_content">--- ms</div>
+                <hr>
+                <div class="time_avg">평균 소요 시간: --- ms</div>
+            </article>
+        </section>
+    </section>
+
+    <section class="bottom">
+        <!-- 원본 정확도 차트 -->
+        <article class="normal_acc">
+            <div class="acc_title">원본 정확도</div>
+            <hr>
+            <div class="acc_chart">라벨별 확률 pie 차트</div>
+            <div class="acc_fig">-- %</div>
+            <div class="acc_content">target : ---</div>
+        </article>
+        <!-- 공격 데이터 정확도 차트 -->
+        <article class="attacked_acc">
+            <div class="acc_title">공격 데이터 정확도</div>
+            <hr>
+            <div class="acc_chart">라벨별 확률 pie 차트</div>
+            <div class="acc_fig">-- %</div>
+            <div class="acc_content">target : ---</div>
+        </article>
+        <!-- 공격 데이터 방어 정확도 차트 -->
+        <article class="defense_acc">
+            <div class="acc_title">공격 데이터 방어 정확도</div>
+            <hr>
+            <div class="acc_chart">라벨별 확률 pie 차트</div>
+            <div class="acc_fig">-- %</div>
+            <div class="acc_content">target : ---</div>
+        </article>
+    </section>
+</body>
+</html>
