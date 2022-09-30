@@ -44,7 +44,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 62px;
     text-align: center;
     
@@ -69,7 +69,7 @@
     left: 0px;                  /* left: 116px; */
     top: 281px;
 
-    font-size: 30px;
+    font-size: 26px;
     line-height: 36px;
     display: flex;
     align-items: center;
@@ -111,7 +111,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 32px;
     line-height: 48px;
     display: flex;
     align-items: center;
@@ -158,7 +158,7 @@
     height: 200px;
     top: 97px;
 
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
     display: flex;
     align-items: center;
@@ -259,7 +259,7 @@
     height: 125px;
     top: 130px;                 /* top: 1351px; */
 
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     display: flex;
     align-items: center;
